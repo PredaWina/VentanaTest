@@ -15,12 +15,12 @@
     
     
 
-    <div id="ventana" >
-        <div class="ventana_barra_sup" onmousedown="a(event);">
-           <div class="contendor_boton">
-                <button class="boton" onclick="agrandar(10)">+</button>
-                <button class="boton" onclick="reducir(10)">-</button>
-            </div>
+    <div class="ventana" id="1">
+        <div class="ventana_barra_sup" >
+            <div class="barra_arr" onmousedown="a(event, '1');"></div>
+            <button class="boton" onclick="agrandar(10)">+</button>
+            <button class="boton" onclick="reducir(10)">-</button>
+            
             
         </div>
         <div id="arreglar" class="ventana_contenido"></div>
@@ -28,7 +28,12 @@
 
     </div>
   
-    <div class="barra_tareas"></div>
+    <div class="barra_tareas">
+        <button class="boton_carpeta"></button>
+
+    </div>
+
+
 
    
 </body>

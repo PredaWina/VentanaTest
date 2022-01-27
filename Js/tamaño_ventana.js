@@ -22,8 +22,13 @@ function reducir (x){
     var alto = ventana.scrollHeight;
     var ancho = ventana.clientWidth;
 
-    ventana.style.height = (alto - x) +"px";
-    arreglar.style.height = (alto_cont - x) +"px";
-    ventana.style.width = (ancho - (1.15 * x)) +"px";
+    
+
+    if(alto_cont != 0){
+        ventana.style.height = (alto - x) +"px";
+        arreglar.style.height = (alto_cont - x) +"px";
+        ventana.style.width = (ancho - (1.15 * x)) +"px";
+
+    }
 }
 

@@ -1,6 +1,8 @@
 
-function a(event)  {
-    
+function a(event, ventanaId)  {
+    let ventana = document.getElementById(ventanaId);  
+
+
     let shiftX = event.clientX - ventana.getBoundingClientRect().left;
     let shiftY = event.clientY - ventana.getBoundingClientRect().top;
   

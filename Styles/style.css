@@ -2,7 +2,7 @@
 
 body{
     display: flex;
-    
+    /* margin: 0px; */
     align-content: space-between;
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdata.1freewallpapers.com%2Fdownload%2Fbeautiful-horizon-1920x1080.jpg&f=1&nofb=1");
     background-color: transparent   ;
@@ -10,13 +10,13 @@ body{
     background-color: brown;
 }
 
-#ventana{
+.ventana{
     
     width: 40vh;
     display: block;
     background-color: transparent;
-    z-index: 1;
-       
+    z-index: 0;
+    
 }
     .ventana_barra_sup{
         display: flex;
@@ -25,7 +25,36 @@ body{
         background-color: rgb(114, 114, 182);
         height: 4vh;
         width: 100%;
+        
     }
+        .barra_arr{
+            background-color: transparent;
+            border-radius: 5px 0px 0px 0px;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        
+        .boton{
+            z-index: 1000;
+            paint-order: fill;
+            font-size: 20px;
+            color: aliceblue;
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 0px 5px 0px 0px;
+
+            height: 100%;
+            width: 10%;
+        }
+        
+        .boton:hover{
+            cursor: pointer;
+        }
+        .boton:first-of-type{
+            border-radius: 0px;
+        }
     .ventana_contenido{
         
         background-color: rgb(154, 154, 248);
@@ -39,26 +68,20 @@ body{
         height: 2vh;
         width: 100%;
     }
-.contendor_boton{
-    
-    width: 20%;
-    display: flex;
-    /* background-color: white; */
-    padding: 0.5%;
-    justify-content: space-between;
-}
 
-.boton{
-    
-    font-size: 20px;
-    color: aliceblue;
-    background-color: transparent;
-    border-color: transparent;
-    border-radius: 5px;
-    height: 90%;
-    width: 45%;
-}
-
-.boton:hover{
-    cursor: pointer;
-}
+    .barra_tareas{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 0%;
+        width: 100%;
+        height: 6vh;
+        background-color: rgb(86, 105, 121);
+        left: 0%    ;
+        
+    }
+        .boton_carpeta{
+            height: 100%;
+            /* background-color: transparent; */
+            background-image: url(/Img/carpeta_ico.png);
+        }
