@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="Js/moverVentana.js"></script>
+    <script src="Js/tamaño_ventana.js"></script>
+
+</head>
+<body>
+    
+    
+
+    <div id="ventana" >
+        <div class="ventana_barra_sup" onmousedown="a(event);">
+           <div class="contendor_boton">
+                <button class="boton" onclick="agrandar(10)">+</button>
+                <button class="boton" onclick="reducir(10)">-</button>
+            </div>
+            
+        </div>
+        <div id="arreglar" class="ventana_contenido"></div>
+        <div class="ventana_barra_inf"></div>
+
+    </div>
+  
+    <div class="barra_tareas"></div>
+
+   
+</body>
+</html>

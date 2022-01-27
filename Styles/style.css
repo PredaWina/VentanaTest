@@ -1,0 +1,64 @@
+
+
+body{
+    display: flex;
+    
+    align-content: space-between;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdata.1freewallpapers.com%2Fdownload%2Fbeautiful-horizon-1920x1080.jpg&f=1&nofb=1");
+    background-color: transparent   ;
+ 
+    background-color: brown;
+}
+
+#ventana{
+    
+    width: 40vh;
+    display: block;
+    background-color: transparent;
+    z-index: 1;
+       
+}
+    .ventana_barra_sup{
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 5px 5px 0px 0px;
+        background-color: rgb(114, 114, 182);
+        height: 4vh;
+        width: 100%;
+    }
+    .ventana_contenido{
+        
+        background-color: rgb(154, 154, 248);
+        height: 150px;
+        width: 100%;
+    }
+    .ventana_barra_inf{
+        border-radius: 0px 0px 5px 5px;
+
+        background-color: rgb(114, 114, 182);
+        height: 2vh;
+        width: 100%;
+    }
+.contendor_boton{
+    
+    width: 20%;
+    display: flex;
+    /* background-color: white; */
+    padding: 0.5%;
+    justify-content: space-between;
+}
+
+.boton{
+    
+    font-size: 20px;
+    color: aliceblue;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    height: 90%;
+    width: 45%;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
