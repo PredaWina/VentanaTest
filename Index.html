@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="Styles/style.css">
     <script src="Js/moverVentana.js"></script>
     <script src="Js/tamaño_ventana.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -17,13 +20,30 @@
 
     <div class="ventana" id="1">
         <div class="ventana_barra_sup" >
-            <div class="barra_arr" onmousedown="a(event, '1');"></div>
-            <button class="boton" onclick="agrandar(10)">+</button>
-            <button class="boton" onclick="reducir(10)">-</button>
+            <div class="barra_arr" onmousedown="a(event, '1');">
+                <h1 class="titulo">Ventana 1</h1>
+            </div>
+            <button class="boton" onclick="agrandar(10, '1', 'cont1');">+</button>
+            <button class="boton" onclick="reducir(10, '1', 'cont1');">-</button>
             
             
         </div>
-        <div id="arreglar" class="ventana_contenido"></div>
+        <div id="cont1" class="ventana_contenido"></div>
+        <div class="ventana_barra_inf"></div>
+
+    </div>
+
+    <div class="ventana" id="2">
+        <div class="ventana_barra_sup" >
+            <div class="barra_arr" onmousedown="a(event, '2');">
+                <h1 class="titulo">Ventana 2</h1>
+            </div>
+            <button class="boton" onclick="agrandar(10, '2', 'cont2');">+</button>
+            <button class="boton" onclick="reducir(10, '2', 'cont2');">-</button>
+            
+            
+        </div>
+        <div id="cont2" class="ventana_contenido"></div>
         <div class="ventana_barra_inf"></div>
 
     </div>

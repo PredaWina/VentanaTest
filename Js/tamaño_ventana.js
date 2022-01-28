@@ -1,9 +1,9 @@
 
-function agrandar (x){
+function agrandar (x, ventanaID, contID){
     console.log("Hola");
 
-    let ventana = document.getElementById("ventana");
-    let arreglar = document.getElementById("arreglar");
+    let ventana = document.getElementById(ventanaID);
+    let arreglar = document.getElementById(contID);
 
     var alto_cont = arreglar.clientHeight;
     var alto = ventana.scrollHeight;
@@ -14,9 +14,9 @@ function agrandar (x){
     ventana.style.width = (ancho + (1.15 * x)) +"px";
 }
 
-function reducir (x){
-    let ventana = document.getElementById("ventana");
-    let arreglar = document.getElementById("arreglar");
+function reducir (x, ventanaID, contID){
+    let ventana = document.getElementById(ventanaID);
+    let arreglar = document.getElementById(contID);
 
     var alto_cont = arreglar.clientHeight;
     var alto = ventana.scrollHeight;
