@@ -33,17 +33,23 @@ function crear_ventana(nombre){
                 titulo.textContent = nombre;
                 barra_arr.appendChild(titulo);
 
+            var botonMENOS = document.createElement("button");
+            botonMENOS.setAttribute("class", "boton");
+            botonMENOS.setAttribute("onclick", "reducir(10," + x + ", 'cont" + x +"');");
+            botonMENOS.textContent = "-";
+            ventana_barra_sup.appendChild(botonMENOS);    
+
             var botonMAS = document.createElement("button");
             botonMAS.setAttribute("class", "boton");
             botonMAS.setAttribute("onclick", "agrandar(10," + x + ", 'cont" + x +"');");
             botonMAS.textContent = "+";
             ventana_barra_sup.appendChild(botonMAS);    
 
-            var botonMENOS = document.createElement("button");
-            botonMENOS.setAttribute("class", "boton");
-            botonMENOS.setAttribute("onclick", "reducir(10," + x + ", 'cont" + x +"');");
-            botonMENOS.textContent = "-";
-            ventana_barra_sup.appendChild(botonMENOS);    
+            var botonDEL = document.createElement("button");
+            botonDEL.setAttribute("class", "boton");
+            botonDEL.setAttribute("onclick", "cerrar('" + x + "');");
+            botonDEL.textContent = "X";
+            ventana_barra_sup.appendChild(botonDEL);  
 
         // Div contenido
         var ventana_contenido = document.createElement("div");
@@ -56,6 +62,22 @@ function crear_ventana(nombre){
         ventana_barra_inf.setAttribute("class", "ventana_barra_inf");
         ventana.appendChild(ventana_barra_inf);
 
+    //Ahora ajustamos la posicion inical
+    nueva_pos(x);
+
     //Augmentar contador de ventanas
     x++;
+}
+
+function cerrar(ventanaID){
+
+    var div = document.getElementById(ventanaID);
+
+    if(div !== null){
+        while (div.hasChildNodes()){
+            div.removeChild(div.lastChild);
+        }
+    }else{
+        console.warn("No existe la ventana.");
+    }
 }

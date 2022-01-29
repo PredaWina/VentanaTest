@@ -51,7 +51,7 @@ body{
             justify-items: center;
             align-items: center;
 
-            
+
         }
 
             .titulo{
@@ -63,31 +63,29 @@ body{
         
         
         .boton{
-            z-index: 1000;
-            paint-order: fill;
+
+            padding: 0.5vh;
             font-size: 2vh;
             color: aliceblue;
             background-color: transparent;
             border-color: transparent;
-            border-radius: 0px 1vh 0px 0px;
-
             height: 100%;
-            width: 6vh;
+            width: 3vh;
+            text-align: center;
         }
         
         .boton:hover{
             cursor: pointer;
         }
-        .boton:first-of-type{
-            border-radius: 0px;
-        }
+
         .boton:last-of-type{
-            margin-right: 0px;
+            /* margin-right: 0.5vh; */
+            border-radius: 0px 1vh 0px 0px;
         }
     .ventana_contenido{
         
         background-color: rgb(154, 154, 248);
-        height: 150px;
+        height: 25vh;
         width: 100%;
 
         border-top: 0px;
