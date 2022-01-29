@@ -9,11 +9,12 @@ body{
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdata.1freewallpapers.com%2Fdownload%2Fbeautiful-horizon-1920x1080.jpg&f=1&nofb=1");
     background-color: transparent   ;
  
-    background-color: brown;
+    background-color: rgb(169, 124, 219);
 }
 
 .ventana{
     
+    position: absolute;
     width: 40vh;
     display: block;
     background-color: transparent;
@@ -57,7 +58,7 @@ body{
             border-radius: 0px 5px 0px 0px;
 
             height: 100%;
-            width: 10%;
+            width: 6vh;
         }
         
         .boton:hover{
@@ -93,6 +94,15 @@ body{
     }
         .boton_carpeta{
             height: 100%;
+            width: 3%;
             /* background-color: transparent; */
-            background-image: url(Img/carpeta_ico.png);
+            background-color: transparent;
+            background-size: cover;
+            background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.icon-icons.com%2Ficons2%2F1379%2FPNG%2F512%2Ffolderred_93207.png&f=1&nofb=1");
+            /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdata.1freewallpapers.com%2Fdownload%2Fbeautiful-horizon-1920x1080.jpg&f=1&nofb=1"); */
+            border:transparent;
+        
         }
+            .boton_carpeta:hover{
+                cursor: pointer;
+            }

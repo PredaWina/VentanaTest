@@ -12,7 +12,7 @@ function a(event, ventanaId)  {
   
     moveAt(event.pageX, event.pageY);
   
-    // mueve la pelota a las coordenadas (pageX, pageY)
+    // mueve la ventana a las coordenadas (pageX, pageY)
     // tomando la posición inicial en cuenta
     function moveAt(pageX, pageY) {
       ventana.style.left = pageX - shiftX + 'px';
@@ -23,19 +23,14 @@ function a(event, ventanaId)  {
       moveAt(event.pageX, event.pageY);
     }
   
-    // mueve la pelota con mousemove
+    // mueve la ventana con mousemove
     document.addEventListener('mousemove', onMouseMove);
   
-    // suelta la pelota, elimina el manejador innecesario
+    // suelta la ventana
     ventana.onmouseup = function() {
       document.removeEventListener('mousemove', onMouseMove);
       ventana.onmouseup = null;
     };
   
-  };
+};
   
-  ventana.ondragstart = function() {
-    return false;
-  };
-
- 
