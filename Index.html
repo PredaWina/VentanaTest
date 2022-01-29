@@ -13,6 +13,7 @@
     <script src="Js/moverVentana.js"></script>
     <script src="Js/tamaño_ventana.js"></script>
     <script src="Js/posicion_incial_ventana.js"></script>
+    <script src="Js/crear_ventanas.js"></script>
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,53 +25,25 @@
     
     
 
-    <div class="ventana" id="1">
+    <div class="ventana" id="-1">
         <div class="ventana_barra_sup" >
-            <div class="barra_arr" onmousedown="a(event, '1');">
-                <h1 class="titulo">Ventana 1</h1>
+            <div class="barra_arr" onmousedown="a(event, '-1');">
+                <h1 class="titulo">Ventana -1</h1>
             </div>
-            <button class="boton" onclick="agrandar(10, '1', 'cont1');">+</button>
-            <button class="boton" onclick="reducir(10, '1', 'cont1');">-</button>
+            <button class="boton" onclick="agrandar(10, '-1', 'cont-1');">+</button>
+            <button class="boton" onclick="reducir(10, '-1', 'cont-1');">-</button>
             
             
         </div>
-        <div id="cont1" class="ventana_contenido"></div>
+        <div id="cont-1" class="ventana_contenido"></div>
         <div class="ventana_barra_inf"></div>
 
     </div>
-
-    <div class="ventana" id="2">
-        <div class="ventana_barra_sup" >
-            <div class="barra_arr" onmousedown="a(event, '2');">
-                <h1 class="titulo">Ventana 2</h1>
-            </div>
-            <button class="boton" onclick="agrandar(10, '2', 'cont2');">+</button>
-            <button class="boton" onclick="reducir(10, '2', 'cont2');">-</button>
-            
-            
-        </div>
-        <div id="cont2" class="ventana_contenido"></div>
-        <div class="ventana_barra_inf"></div>
-
-    </div>
-
-    <div class="ventana" id="3">
-        <div class="ventana_barra_sup" >
-            <div class="barra_arr" onmousedown="a(event, '3');">
-                <h1 class="titulo">Ventana 3</h1>
-            </div>
-            <button class="boton" onclick="agrandar(10, '3', 'cont3');">+</button>
-            <button class="boton" onclick="reducir(10, '3', 'cont3');">-</button>
-            
-            
-        </div>
-        <div id="cont3" class="ventana_contenido"></div>
-        <div class="ventana_barra_inf"></div>
-
-    </div>
+ 
+    
   
-    <div class="barra_tareas">
-        <button class="boton_carpeta"></button>
+    <div class="barra_tareas" id="barra">
+        <button class="boton_carpeta" onclick="inciar_creacion_ventana();"></button>
        
 
     </div>
