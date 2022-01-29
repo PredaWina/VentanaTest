@@ -1,18 +1,17 @@
-var pos_x, pos_y;
-
-function inicializar(event){
-    console.log("Incializar se ejecuta");
-    pos_x = event.pageX;
-    pos_y = event.pageY;
-}
+var pos_x = 10;
+var pos_y = 10;
 
 function nueva_pos(ventanaID){
     
+
     let ventana = document.getElementById(ventanaID);
 
-    console.log("Mueve Pos se ejecuta");
+    console.log("Mueve Pos se ejecuta " + pos_x + " || " + pos_y);
 
+    ventana.style.left = pos_x + 'px';
+    ventana.style.top = pos_y + 'px';
 
-    ventana.style.left = (pos_x - 150) + 'px';
-    ventana.style.top = (pos_y - 150) + 'px';
+    pos_x += 20;
+    pos_y += 20;
+
 }
