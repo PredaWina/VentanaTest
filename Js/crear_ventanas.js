@@ -10,7 +10,7 @@ function inciar_creacion_ventana(){
 
 function crear_ventana(nombre){
 
-    console.log("Creadno ventana con nombre: " + nombre);
+    console.log("Creando ventana con nombre: " + nombre);
  
     // Div principal
     var ventana = document.createElement("div");
